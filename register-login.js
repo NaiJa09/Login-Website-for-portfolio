@@ -17,8 +17,15 @@ console.log(sum(2,5));
 
 // ADD EVENT LISTENER CLICK FUNCTION 
 
-function click(){
-	document.queryselector(".test").innerHRML = 'hello';
+// NOTE: One of the errors you are facing is in naming your functions.
+// JS has some "reserved" words that have a special purpose. These include
+// things like "click". So, avoid using these as function names. iF you must, 
+// you can be more descriptive like how I changed the function name to "handleClick".
+
+function handleClick(){
+	// NOTE: You speeled it as 'queryselector' when it should have been 'querySelector'
+	// NOTE you also wrote 'innerHRML' when it should be 'innerHTML'
+	document.querySelector('.test').innerHTML = 'hello';
 };
 
 
